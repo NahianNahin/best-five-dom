@@ -12,6 +12,18 @@ function disabledBtn(btn){
 
 }
 
+function inputValue(inputId){
+    const inputField = document.getElementById(inputId);
+    const inputValueString = inputField.value;
+    const inputValue = parseFloat(inputValueString);
+    return inputValue;
+}
+
+function display(displayId){
+    const displayField = document.getElementById(displayId);
+    return displayField;
+}
+
 
 // ADD EVENT IN BUTTONS 
 
@@ -80,4 +92,36 @@ document.getElementById('btn-6').addEventListener('click',function(){
         }
     appendElement('Renato Sanches');
     disabledBtn('btn-6');
+})
+
+// CALCULATION SECTION 
+
+document.getElementById('calculate-btn').addEventListener('click',function(){
+    if( inputValue('per-player') <= 0 || isNaN(inputValue('per-player'))){
+        alert('Give a positive number');
+        display('per-player').value = '';
+        display('five-player-price').innerText = '00';
+        return;
+    }
+    const totalPlayerPrice = parseFloat(inputValue('per-player')) * 5;
+    display('per-player').value = '';
+    display('five-player-price').innerText = totalPlayerPrice;
+    
+
+})
+document.getElementById('total-btn').addEventListener('click',function(){
+    if( inputValue('manager') <= 0 || inputValue('coach') <= 0 || isNaN(inputValue('manager')) || isNaN(inputValue('coach'))){
+        alert('Give a positive number');
+        display('manager').value = '';
+        display('coach').value = '';
+        display('total-price').innerText = '00';
+        return;
+    }
+    const fivePlayerPrice = parseFloat(display('five-player-price').innerText);
+    const totalPrice = fivePlayerPrice + inputValue('manager') + inputValue('coach');
+    display('total-price').innerText = totalPrice;
+    display('manager').value = '';
+    display('coach').value = '';
+    
+
 })
