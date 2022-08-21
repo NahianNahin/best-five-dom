@@ -28,6 +28,20 @@
             font-family: 'Berkshire Swash', cursive;
             color: #ffcc00;
         }
+        .para{
+          color: white;
+          opacity: .5;
+          font-size: 16px;
+          padding-top: 3px;
+        }
+        .my-border{
+          border-bottom: 3px solid #ffcc00;
+          display: inline-block;
+        }
+        .span{
+          width: 6rem;
+          display: inline-block;
+        }
       </style>
 </head>
 </head>
@@ -49,5 +63,84 @@
         </div>
     </header>
     <!-- MAIN START  -->
+    <main class="py-16 bg-slate-900 p-">
+      <div class="flex w-10/12 mx-auto gap-6">
+        <div class="grid grid-cols-3 gap-3">
+          <!-- FIRST CARD  -->
+          <div class="bg-black ">
+            <img src="img/player-1.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Lionel Messi</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-1">select</button>
+            </div>
+          </div>
+          <!-- 2nd CARD  -->
+          <div class="bg-black shadow-xl ">
+            <img src="img/player-2.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Neymar Jr</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-2">select</button>
+            </div>
+          </div>
+          <!-- Third CARD  -->
+          <div class="bg-black ">
+            <img src="img/player-3.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Kylian Mbappé</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-3">select</button>
+            </div>
+          </div>
+          <!-- 4th CARD  -->
+          <div class="bg-black ">
+            <img src="img/player-4.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Vítor Machado</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-4">select</button>
+            </div>
+          </div>
+          <!-- 5th CARD  -->
+          <div class="bg-black ">
+            <img src="img/player-5.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Sergio Ramos</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-5">select</button>
+            </div>
+          </div>
+          <!-- 6th CARD  -->
+          <div class="bg-black ">
+            <img src="img/player-6.png" alt="">
+            <div class="p-5 text-center">
+              <p class="text-3xl font-semibold text-white">Renato Sanches</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-6">select</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="bg-black text-white w-60 pt-5 pb-24 text-center h-auto">
+            <h1 class="text-3xl font-medium my-border pb-1">Select <span style="color:#ffcc00;font-family: 'Berkshire Swash', cursive;">5</span></h1>
+            
+
+          </div>
+          <div class="bg-black text-white py-3  text-center">
+            <h1 class="text-3xl font-medium my-border mb-6 pb-2">Budget</h1><br>
+            <label class="para" for="per-player"><span class="span">Per Player</span></label>
+            <input class="w-24 h-9 bg-black border-2" type="text"><br>
+            <button class="py-2 bg-sky-900 px-12 my-5">Calculate</button>
+
+          </div>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
+
+
+
+}
