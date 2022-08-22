@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chose Your Favorive Football Player</title>
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
     <!-- TALIWIND SCRIPT  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -164,7 +165,7 @@
         <div class="flex flex-col sm:flex-row md:flex-row lg:flex-col gap-3">
           <!-- SELECT SECTION  -->
           <div class="bg-black text-white w-60 pt-5 pb-24 text-center h-auto rounded mx-auto sm:h-56 md:h-56 ">
-            <h1 class="text-3xl font-medium my-border mb-3 pb-1">Select <span style="color:#ffcc00;font-family: 'Berkshire Swash', cursive;">5</span></h1>
+            <h1 class="text-3xl font-medium my-border mb-3 pb-1 uppercase">Select <span id="select-count" style="color:#ffcc00;font-family: 'Berkshire Swash', cursive;"></span></h1>
             <ol id="list-container">
 
             </ol>
@@ -172,7 +173,7 @@
           </div>
           <!-- CALCULATION AND TOTAL SECTION  -->
           <div class="bg-black text-white py-3 w-60 text-center rounded mx-auto md:w-72 lg:w-60 2xl:w-80">
-            <h1 class="text-3xl font-medium my-border mb-6 pb-2">Budget</h1><br>
+            <h1 class="text-3xl font-medium my-border mb-6 pb-2 uppercase">Budget</h1><br>
             <label class="para" for="per-player"><span class="span">Per Player</span></label>
             <input id="per-player" class="w-24 h-9 bg-black border-2 text-center" type="text"><br>
             <button class="py-2 bg-sky-900 px-12 my-5" id="calculate-btn">Calculate</button><br>
