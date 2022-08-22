@@ -23,6 +23,18 @@ function display(displayId){
     const displayField = document.getElementById(displayId);
     return displayField;
 }
+function selectButtonEvent(btnId,name){
+    document.getElementById(btnId).addEventListener('click',function(){
+            
+        const listContainer = document.getElementById('list-container');
+            if(listContainer.childElementCount >= 5){
+                alert('you already select 5');
+                return;
+            }
+        appendElement(name);
+        disabledBtn(btnId);
+    })
+}
 
 
 // ADD EVENT IN BUTTONS 
@@ -94,6 +106,13 @@ document.getElementById('btn-6').addEventListener('click',function(){
     disabledBtn('btn-6');
 })
 
+// FOR btn-7
+selectButtonEvent('btn-7','Cristian Ronaldo');
+// FOR btn-8
+selectButtonEvent('btn-8','Dani Alves');
+// FOR btn-9
+selectButtonEvent('btn-9','Mesut Özil');
+
 // CALCULATION SECTION 
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
@@ -103,7 +122,8 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         display('five-player-price').innerText = '00';
         return;
     }
-    const totalPlayerPrice = parseFloat(inputValue('per-player')) * 5;
+    const listContainer = document.getElementById('list-container');
+    const totalPlayerPrice = parseFloat(inputValue('per-player')) * listContainer.childElementCount;
     display('per-player').value = '';
     display('five-player-price').innerText = totalPlayerPrice;
     

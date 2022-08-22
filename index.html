@@ -49,6 +49,10 @@
             list-style-type: decimal !important;
             list-style-position: inside !important;
         }
+        .img-size{
+          width: 264px;
+          height: 204px;
+        }
 
       </style>
 </head>
@@ -59,7 +63,7 @@
         <div class="w-10/12 mx-auto">
             <div class="flex  p-9">
                 <div class="lg:w-2/3 text-center">
-                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold my-font p-4">Chose Your Favorive 5<br> Football Player</h1>
+                        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold my-font p-4">Chose Your Favorive 5<br> Football Player</h1>
                         <p class="text-center text-white">Chose you favorite football player.You can choice any 5 of them.
                             <br>Now choice is all yours which 5 you want.
                         </p>
@@ -72,10 +76,10 @@
     </header>
     <!-- MAIN START  -->
     <main class="py-16 bg-slate-900 ">
-      <div class="flex flex-col md:flex-row lg:flex-row w-10/12 mx-auto gap-6">
+      <div class="flex flex-col-reverse md:flex-col-reverse lg:flex-row w-10/12 mx-auto gap-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <!-- FIRST CARD  -->
-          <div class="bg-black w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto ">
             <img src="img/player-1.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Lionel Messi</p>
@@ -84,7 +88,7 @@
             </div>
           </div>
           <!-- 2nd CARD  -->
-          <div class="bg-black shadow-xl w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black shadow-xl w-60 md:w-64 lg:w-64 mx-auto">
             <img src="img/player-2.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Neymar Jr</p>
@@ -93,7 +97,7 @@
             </div>
           </div>
           <!-- Third CARD  -->
-          <div class="bg-black w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
             <img src="img/player-3.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Kylian Mbappé</p>
@@ -102,7 +106,7 @@
             </div>
           </div>
           <!-- 4th CARD  -->
-          <div class="bg-black w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto ">
             <img src="img/player-4.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Vítor Machado</p>
@@ -111,7 +115,7 @@
             </div>
           </div>
           <!-- 5th CARD  -->
-          <div class="bg-black w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
             <img src="img/player-5.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Sergio Ramos</p>
@@ -120,7 +124,7 @@
             </div>
           </div>
           <!-- 6th CARD  -->
-          <div class="bg-black w-60 md:w-64 lg:w-64 ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
             <img src="img/player-6.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Renato Sanches</p>
@@ -128,11 +132,38 @@
               <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-6">select</button>
             </div>
           </div>
+          <!-- 7th CARD  -->
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
+            <img class="img-size" src="img/player-7.jpg" alt="">
+            <div class="p-5 text-center">
+              <p class="text-2xl font-semibold text-white">Cristian Ronaldo</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-7">select</button>
+            </div>
+          </div>
+          <!-- 8th CARD  -->
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
+            <img class="img-size" src="img/player-8.jpeg" alt="">
+            <div class="p-5 text-center">
+              <p class="text-2xl font-semibold text-white">Dani Alves</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-8">select</button>
+            </div>
+          </div>
+          <!-- 9th CARD  -->
+          <div class="bg-black w-60 md:w-64 lg:w-64 mx-auto">
+            <img class="img-size" src="img/player-9.jpg" alt="">
+            <div class="p-5 text-center">
+              <p class="text-2xl font-semibold text-white">Mesut Özil</p>
+              <p class="para">68 Goals  .  120 Assist</p>
+              <button class="bg-sky-900 py-2 px-16 my-5 text-white font-bold  uppercase"  id="btn-9">select</button>
+            </div>
+          </div>
         </div>
 
-        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-col gap-3">
+        <div class="flex flex-col sm:flex-row md:flex-row lg:flex-col gap-3">
           <!-- SELECT SECTION  -->
-          <div class="bg-black text-white w-60 pt-5 pb-24 text-center h-auto rounded">
+          <div class="bg-black text-white w-60 pt-5 pb-24 text-center h-auto rounded mx-auto sm:h-56 md:h-56 ">
             <h1 class="text-3xl font-medium my-border mb-3 pb-1">Select <span style="color:#ffcc00;font-family: 'Berkshire Swash', cursive;">5</span></h1>
             <ol id="list-container">
 
@@ -140,7 +171,7 @@
 
           </div>
           <!-- CALCULATION AND TOTAL SECTION  -->
-          <div class="bg-black text-white py-3 w-60 text-center rounded">
+          <div class="bg-black text-white py-3 w-60 text-center rounded mx-auto md:w-72 lg:w-60 2xl:w-80">
             <h1 class="text-3xl font-medium my-border mb-6 pb-2">Budget</h1><br>
             <label class="para" for="per-player"><span class="span">Per Player</span></label>
             <input id="per-player" class="w-24 h-9 bg-black border-2 text-center" type="text"><br>
