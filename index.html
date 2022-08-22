@@ -58,24 +58,24 @@
     <header class="bg-black py-16">
         <div class="w-10/12 mx-auto">
             <div class="flex  p-9">
-                <div class="w-2/3 text-center">
-                        <h1 class="text-5xl font-bold my-font p-4">Chose Your Favorive 5<br> Football Player</h1>
+                <div class="lg:w-2/3 text-center">
+                        <h1 class="text-xl md:text-4xl lg:text-5xl font-bold my-font p-4">Chose Your Favorive 5<br> Football Player</h1>
                         <p class="text-center text-white">Chose you favorite football player.You can choice any 5 of them.
                             <br>Now choice is all yours which 5 you want.
                         </p>
                 </div>
                 <div class="">
-                    <img class="w-28" src="img/header-img.png" alt="">
+                    <img class="w-28 hidden md:block lg:block" src="img/header-img.png" alt="">
                 </div>
             </div>
         </div>
     </header>
     <!-- MAIN START  -->
     <main class="py-16 bg-slate-900 ">
-      <div class="flex w-10/12 mx-auto gap-6">
-        <div class="grid grid-cols-3 gap-3">
+      <div class="flex flex-col md:flex-row lg:flex-row w-10/12 mx-auto gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <!-- FIRST CARD  -->
-          <div class="bg-black ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 ">
             <img src="img/player-1.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Lionel Messi</p>
@@ -84,7 +84,7 @@
             </div>
           </div>
           <!-- 2nd CARD  -->
-          <div class="bg-black shadow-xl ">
+          <div class="bg-black shadow-xl w-60 md:w-64 lg:w-64 ">
             <img src="img/player-2.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Neymar Jr</p>
@@ -93,7 +93,7 @@
             </div>
           </div>
           <!-- Third CARD  -->
-          <div class="bg-black ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 ">
             <img src="img/player-3.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Kylian Mbappé</p>
@@ -102,7 +102,7 @@
             </div>
           </div>
           <!-- 4th CARD  -->
-          <div class="bg-black ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 ">
             <img src="img/player-4.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Vítor Machado</p>
@@ -111,7 +111,7 @@
             </div>
           </div>
           <!-- 5th CARD  -->
-          <div class="bg-black ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 ">
             <img src="img/player-5.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Sergio Ramos</p>
@@ -120,7 +120,7 @@
             </div>
           </div>
           <!-- 6th CARD  -->
-          <div class="bg-black ">
+          <div class="bg-black w-60 md:w-64 lg:w-64 ">
             <img src="img/player-6.png" alt="">
             <div class="p-5 text-center">
               <p class="text-3xl font-semibold text-white">Renato Sanches</p>
@@ -130,7 +130,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-col gap-3">
           <!-- SELECT SECTION  -->
           <div class="bg-black text-white w-60 pt-5 pb-24 text-center h-auto rounded">
             <h1 class="text-3xl font-medium my-border mb-3 pb-1">Select <span style="color:#ffcc00;font-family: 'Berkshire Swash', cursive;">5</span></h1>
@@ -140,7 +140,7 @@
 
           </div>
           <!-- CALCULATION AND TOTAL SECTION  -->
-          <div class="bg-black text-white py-3  text-center rounded">
+          <div class="bg-black text-white py-3 w-60 text-center rounded">
             <h1 class="text-3xl font-medium my-border mb-6 pb-2">Budget</h1><br>
             <label class="para" for="per-player"><span class="span">Per Player</span></label>
             <input id="per-player" class="w-24 h-9 bg-black border-2 text-center" type="text"><br>
